@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "jujutsu-mod",
+	"version": "0.0.1",
+	"name": "Jujutsu Mod",
+	"description": "A jujutsu mod",
+	"authors": [
+		"Lena, lenawoah"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/AnnieWOah/lenasjujutsumod-template-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/jujutsu-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lena.jujutsumod.JujutsuMod"
+		],
+		"fabric-datagen": [
+			"net.lena.jujutsumod.JujutsuModDataGenerator"
+		],
+		"client":[
+			"net.lena.jujutsumod.JujutsuModClient"
+		]
+	},
+	"mixins": [
+		"jujutsu-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
